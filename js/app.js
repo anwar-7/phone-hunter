@@ -50,7 +50,7 @@ const displayDetails = (phone) => {
       <div style="margin: 0 auto; float: none; margin-bottom: 10px; width: 18rem" class="card">
               <div class="card-body">
                   <h5 class="card-title">${phone.slug}</h5>
-                  <p class="card-text">Phone Name: ${phone.name}</p>
+                  <p class="card-text">Device Name: ${phone.name}</p>
               </div>
           </div>
       `;
