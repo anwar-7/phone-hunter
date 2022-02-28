@@ -8,13 +8,13 @@
     <!-- bootstrap cdn link -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
   </head>
-  <body class="container">
+  <body>
     <!-- input field -->
     <section>
       <!-- heading -->
       <h1 class="text-center m-3">Search Your Phone</h1>
       <!-- input field -->
-      <div class="input-group mb-3 w-50 mx-auto">
+      <div class="input-group mb-3 w-75 mx-auto">
         <input
           id="input-field"
           type="text"
@@ -34,7 +34,12 @@
       </div>
     </section>
 
-    <section>
+    <section class="container">
+      <!-- display details fields -->
+      <div
+        id="display-detail"
+        class="row row-cols-1 row-cols-md-1 row-cols-lg-1 rounded"
+      ></div>
       <!-- display field -->
       <div
         id="display-field"
