@@ -55,26 +55,6 @@ const displayData = (phones) => {
       displayField.appendChild(div);
     });
   }
-  // document.getElementById('error2').style.display = 'none';
-  // const sli = phones.slice(0, 20);
-  // sli.forEach((phone) => {
-  //   // console.log(phone);
-  //   // const displayField = document.getElementById('display-field');
-  //   const div = document.createElement('div');
-  //   div.classList.add('col');
-  //   div.innerHTML = `
-  //   <div class="card">
-  //       <img src="${phone.image}" class="card-img-top rounded mx-auto" style="max-width: 75%;" alt="..." />
-  //           <div class="card-body">
-  //               <h5 class="card-title"><b>Brand Name:</b> ${phone.brand}</h5>
-  //               <p class="card-text"><b>Device Name:</b> ${phone.phone_name}</p>
-  //               <button href="#" onclick="lodeDetails('${phone.slug}')" class="btn btn-primary">Go Details</button>
-  //           </div>
-  //       </div>
-  //   `;
-  //   displayField.appendChild(div);
-  // });
-  // document.getElementById('spinner').style.display = 'none';
 };
 
 const lodeDetails = async (phoneId) => {
@@ -177,50 +157,3 @@ const displayDetails = (phone) => {
       `;
   displayDetail.appendChild(div);
 };
-
-/* 
-<div style="margin: 0 auto; float: none; margin-bottom: 10px; width: 20rem;" class="card">
-              <div class="card-body">
-              <img src="${
-                phone.image ? phone.image : 'Image not found'
-              }" class="card-img-top" alt="..." />
-                  <h5 class="card-title"><b>Brand:</b> 
-                  ${phone.brand ? phone.brand : 'Brand not found'}
-                  </h5>
-                  <p class="card-text"><b>Device Name:</b> 
-                  ${phone.name ? phone.name : 'Device name not found'}
-                  </p>
-                  <p class="card-text"><b>Release Date:</b> 
-                  ${phone.releaseDate}
-                  </p>
-                  <p class="card-text"><b>Main Features:</b> </br>
-                  Storage: ${
-                    phone.mainFeatures.storage
-                      ? phone.mainFeatures.storage
-                      : 'Storage not found'
-                  } </br>
-                  Display Size: ${
-                    phone.mainFeatures.displaySize
-                      ? phone.mainFeatures.displaySize
-                      : 'Display size not found'
-                  } </br>
-                  Chip Set: ${
-                    phone.mainFeatures.chipSet
-                      ? phone.mainFeatures.chipSet
-                      : 'Chip set not found'
-                  } </br>
-                  Memory: ${
-                    phone.mainFeatures.memory
-                      ? phone.mainFeatures.memory
-                      : 'Memory not found'
-                  } </br>
-                  Sensors: ${
-                    phone.mainFeatures.sensors
-                      ? phone.mainFeatures.sensors
-                      : 'Sensors not found'
-                  } </br>
-                  </p>
-                  
-              </div>
-          </div> 
-          */
